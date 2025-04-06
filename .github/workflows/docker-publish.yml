@@ -47,8 +47,10 @@ jobs:
 
       - name: Build Docker image
         run: |
+          IMAGE_NAME: ghcr.io/${{ github.repository_owner }}/$(echo "${{ github.repository }}" | tr '[:upper:]' '[:lower:]')
           docker build -t ghcr.io/${{ github.repository_owner }}/se320_webui:latest .
 
       - name: Push Docker image
         run: |
+          IMAGE_NAME: ghcr.io/${{ github.repository_owner }}/$(echo "${{ github.repository }}" | tr '[:upper:]' '[:lower:]')
           docker push ghcr.io/${{ github.repository_owner }}/se320_webui:latest
