@@ -1,1 +1,35 @@
-tests
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+venv/
+env/
+
+# Git stuff
+.git
+.gitignore
+
+# Dockerfile is usually kept, but .dockerignore itself is ignored by default
+.dockerignore
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE configs
+.vscode/
+
+# Test/coverage/logs
+*.log
+*.cover
+.cache/
+pytest_cache/
+htmlcov/
+
+# Build/dist files
+build/
+dist/
+*.egg-info/
+
